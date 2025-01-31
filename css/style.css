@@ -8,6 +8,16 @@ Reset
     box-sizing: border-box;
 }
 
+
+/********
+Global
+********/
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
 /********
 Header
 ********/
@@ -16,16 +26,11 @@ header {
     padding: 16px 0px;
 }
 
-.container {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-nav.container {
+header nav.container {
     display: flex;
 }
 
-nav > * {
+header nav > * {
     background-color: #daa520;
     padding: 10px;
     border: 1px dashed black;
@@ -33,7 +38,7 @@ nav > * {
     flex-grow: 1;
 }
 
-nav ul {
+header nav ul {
     justify-content: center;
     list-style: none;
     flex-grow: 3;
@@ -42,6 +47,7 @@ nav ul {
 header nav #nav-login {
     justify-content: flex-end;
 }
+
 
 /******
 Main
@@ -90,6 +96,61 @@ main section div.container.reverse {
 }
 
 
+/*******
+Footer
+*******/
+footer > section {
+    background-color: #23272a;
+}
+
+footer section .container {
+    display: flex;
+}
+
+section.upper-foot {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0px 40px;
+}
+
+section.lower-foot {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 30px;
+}
+
+section.upper-foot .single {
+    background-color: #f08080;
+    flex-grow: 2;
+    border: 1px dashed black;
+}
+
+section.upper-foot .multiple {
+    display: flex;
+    background-color: #20b2aa;
+    flex-grow: 4;
+    border: 1px dashed black;
+}
+
+section.upper-foot .sub-multiple {
+    flex-grow: 1;
+    border: 1px dashed white;
+}
+
+footer section nav.container {
+    padding: 20px 0px;
+    background-color: #7fffd4;
+    justify-content: space-between;
+}
+
+.foot-button {
+    padding: 10px;
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+}
+
+
+
+
 /***********************************
 DEBUG   DA RIMUOVERE A FINE SVILUPPO
 ***********************************/
@@ -102,3 +163,7 @@ main section div.container.main-footer {
     height: 890px;
 }
 
+footer section div.container {
+    height: 500px;
+    background-color: #ee82ee;
+}
