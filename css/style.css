@@ -50,13 +50,18 @@ main section {
     padding: 55px 0;
 }
 
-main :nth-child(odd) {
+main section div.container {
+    display: flex;
+}
+
+main > :nth-child(odd) {
     background-color: #d3d3d3;
 }
 
 main section div.container.main-header {
     width: 900px;
     background-color: #ee82ee;
+    border: 1px dashed black;
 }
 
 main section.main-header {
@@ -65,7 +70,25 @@ main section.main-header {
 
 main section div.container.main-footer {
     background-color: #228b22;
+    border: 1px dashed black;
 }
+
+main section div.container.reverse {
+    flex-direction: row-reverse;
+}
+
+.large-content {
+    background-color: #1e90ff;
+    flex-grow: 3;
+    border: 1px dashed black;
+}
+
+.small-content {
+    background-color: #ffc0cb;
+    flex-grow: 2;
+    border: 1px dashed black;
+}
+
 
 /***********************************
 DEBUG   DA RIMUOVERE A FINE SVILUPPO
