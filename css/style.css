@@ -7,3 +7,39 @@ Reset
     padding: 0;
     box-sizing: border-box;
 }
+
+/********
+Header
+********/
+header {
+    background-color: #add8e6;
+    padding: 16px 0px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+nav.container {
+    display: flex;
+}
+
+nav > * {
+    background-color: #daa520;
+    padding: 10px;
+    border: 1px dashed black;
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul {
+    justify-content: center;
+    list-style: none;
+    flex-grow: 3;
+}
+
+header nav #nav-login {
+    justify-content: flex-end;
+}
+
