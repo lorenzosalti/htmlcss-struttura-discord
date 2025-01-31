@@ -43,3 +43,39 @@ header nav #nav-login {
     justify-content: flex-end;
 }
 
+/******
+Main
+******/
+main section {
+    padding: 55px 0;
+}
+
+main :nth-child(odd) {
+    background-color: #d3d3d3;
+}
+
+main section div.container.main-header {
+    width: 900px;
+    background-color: #ee82ee;
+}
+
+main section.main-header {
+    background-color: #00008b;
+}
+
+main section div.container.main-footer {
+    background-color: #228b22;
+}
+
+/***********************************
+DEBUG   DA RIMUOVERE A FINE SVILUPPO
+***********************************/
+main section div.container {
+    height: 500px;
+    background-color: aqua;
+ }
+
+main section div.container.main-footer {
+    height: 890px;
+}
+
